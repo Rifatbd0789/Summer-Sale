@@ -25,3 +25,16 @@ function getInputValue(inputId) {
     const valueId = inputOut.value;
     return valueId;
 }
+// function to check the coupon code
+function checkCoupon(input) {
+    const coupon = getInputValue('input')
+    if (coupon === 'SELL200') {
+        const discountFieldId = input * 20 / 100;
+        const discountField = parseFloat(discountFieldId).toFixed(2)
+        setTheHtmlValue("DiscountId", discountField);
+        const afterDiscountField = input - discountField;
+        const afterDiscount = parseFloat(afterDiscountField).toFixed(2)
+        setTheHtmlValue('Discounted', afterDiscount);
+        // console.log(afterDiscount);
+    }
+}
