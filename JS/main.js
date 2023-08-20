@@ -131,3 +131,70 @@ document.getElementById('card6').addEventListener('click', function(){
         checkCoupon(Total)
     })
 })
+/* Third serial Products*/
+// Card-7
+document.getElementById('card7').addEventListener('click', function(){
+    const price = getTheHtmlValue('price7')
+    const final = getTheHtmlValue('Total')
+    const totalNumber = price + final;
+    const Total = parseFloat(totalNumber).toFixed(2)
+    setTheHtmlValue('Total', Total);
+    createElement('Single Relax Chair');
+    // purchase button work
+    const btn = document.getElementById('Purchase');
+    btn.removeAttribute('disabled');
+    // coupon button work
+    const btn2 = document.getElementById('Discount')
+    if (Total >= 200) {
+        btn2.removeAttribute('disabled')
+    }
+    // coupon button calculation
+    document.getElementById('Discount').addEventListener('click', function(){
+        // const discount = getTheHtmlValue('DiscountId')
+        checkCoupon(Total)
+    })
+})
+// card-8
+document.getElementById('card8').addEventListener('click', function(){
+    const price = getTheHtmlValue('price8')
+    const final = getTheHtmlValue('Total')
+    const totalNumber = price + final;
+    const Total = parseFloat(totalNumber).toFixed(2)
+    setTheHtmlValue('Total', Total);
+    createElement('Children play');
+    // purchase button work
+    const btn = document.getElementById('Purchase');
+    btn.removeAttribute('disabled');
+    // coupon button work
+    const btn2 = document.getElementById('Discount')
+    if (Total >= 200) {
+        btn2.removeAttribute('disabled')
+    }
+    // coupon button calculation
+    document.getElementById('Discount').addEventListener('click', function(){
+        // const discount = getTheHtmlValue('DiscountId')
+        checkCoupon(Total) 
+    })
+})
+// card-9
+document.getElementById('card9').addEventListener('click', function(){
+    const price = getTheHtmlValue('price9')
+    const final = getTheHtmlValue('Total')
+    const totalNumber = price + final;
+    const Total = parseFloat(totalNumber).toFixed(2)
+    setTheHtmlValue('Total', Total);
+    createElement('Flexible Sofa');
+    // purchase button work
+    const btn = document.getElementById('Purchase');
+    btn.removeAttribute('disabled');
+    // coupon button work
+    const btn2 = document.getElementById('Discount')
+    if (Total >= 200) {
+        btn2.removeAttribute('disabled')
+    }
+    // coupon button calculation
+    document.getElementById('Discount').addEventListener('click', function(){
+        // const discount = getTheHtmlValue('DiscountId')
+        checkCoupon(Total)
+    })
+})
