@@ -54,7 +54,7 @@
         <h1 class="text-black font-semibold text-4xl p-5">Kitchenware</h1>
         <div class="flex md:grid lg:flex flex-col md:grid-cols-2 lg:flex-row gap-5">
             <!-- card - 1 -->
-        <div class="card w-full bg-white shadow-xl">
+        <div id="card1" class="card w-full bg-white shadow-xl hover:cursor-pointer">
             <figure class="mx-3 mt-3 bg-kala">
               <img src="./images/prod1.png" alt="product" class="rounded-xl" />
             </figure>
@@ -74,11 +74,11 @@
                     <input type="radio" name="rating-10" class="bg-yellow-500 mask mask-star-2 mask-half-2" />
                   </div>
               <h2 class="card-title text-black">K. Accessories</h2>
-              <p><span>39.00 </span>TK</p>
+              <p><span id="price1">39.00 </span>TK</p>
             </div>
           </div>
           <!-- card - 2 -->
-        <div class="card w-full bg-white shadow-xl">
+        <div id="card2" class="card w-full bg-white shadow-xl hover:cursor-pointer">
             <figure class="mx-3 mt-3 bg-kala">
               <img src="./images/prod2.png" alt="product" class="rounded-xl" />
             </figure>
@@ -98,11 +98,11 @@
                     <input type="radio" name="rating-10" class="bg-yellow-500 mask mask-star-2 mask-half-2" />
                   </div>
               <h2 class="card-title text-black">K. Accessories</h2>
-              <p><span>25.00 </span>TK</p>
+              <p><span id="price2">25.00 </span>TK</p>
             </div>
           </div>
           <!-- card - 3 -->
-        <div class="card w-full bg-white shadow-xl">
+        <div id="card3" class="card w-full bg-white shadow-xl hover:cursor-pointer">
             <figure class="mx-3 mt-3 bg-kala">
               <img src="./images/prod3.png" alt="product" class="rounded-xl" />
             </figure>
@@ -122,7 +122,7 @@
                     <input type="radio" name="rating-10" class="bg-yellow-500 mask mask-star-2 mask-half-2" />
                   </div>
               <h2 class="card-title text-black">Home Cooker</h2>
-              <p><span>49.00 </span>TK</p>
+              <p><span id="price3">49.00 </span>TK</p>
             </div>
           </div>
         </div>
@@ -212,26 +212,27 @@
         <div class="bg-white mt-4 lg:mt-28 pb-5 rounded-xl">
         <h1 class="font-medium p-3">Have coupon?</h1>
         <div class="join mx-3">
-            <input class="input input-bordered join-item" placeholder="Coupon code"/>
-            <button class="btn join-item rounded-r-full bg-golapi text-white">Apply</button>
+            <input id="input" class="input input-bordered join-item" placeholder="Coupon code"/>
+            <button id="Discount" disabled class="btn join-item rounded-r-full bg-golapi text-white">Apply</button>
           </div>
         </div>
         <!-- Price Area -->
         <div class="bg-white mt-4 p-5 pb-16 rounded-xl font-medium">
-            <div class="py-4">
-                <p>1. Home decor</p>
+            <div id="create" class="py-4">
+                <!-- <p>1. Home decor</p> -->
             </div>
             <hr>
             <div class="py-5">
-            <h1>Total Price: <span>00</span>Tk</h1>
-            <h1>Discount: <span>00</span>Tk</h1>
-            <h1>Total: <span>00</span>Tk</h1>
+            <h1>Total Price: <span id="Total">00</span>Tk</h1>
+            <h1>Discount: <span id="DiscountId">00</span>Tk</h1>
+            <h1>Total: <span id="Discounted">00</span>Tk</h1>
         </div>
         <hr>
-        <button class="btn btn-wide mt-10 bg-golapi text-white relative lg:absolute ">Make Purchase</button>
+        <button id="Purchase" disabled class="btn btn-wide mt-10 bg-golapi text-white relative lg:absolute ">Make Purchase</button>
         </div>
     </div>
     </main>
+    <script src="./JS/common.js"></script>
     <script src="./JS/main.js"></script>
 </body>
 </html>
